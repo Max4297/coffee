@@ -16,7 +16,58 @@ body {
 }
 
 .container {
-  width: 920px;
+  width: 950px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $text;
+  position: relative;
+  &::before, &::after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #ECECED;
+    top: 8px;
+  }
+  &::before{
+    left: 340px;
+  }
+  &::after{
+    right: 340px;
+  }
+}
+
+.product {
+  &__img {
+    margin-bottom: 38px;
+  }
+  &__info {
+    text-align: center;
+  }
+  &__title {
+    color: $text;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  &__price-new {
+    color: #A25F4B;
+    font-size: 19px;
+    line-height: 32px;
+  }
+  &__price-old {
+    text-decoration-line: line-through;
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 15px;
+    color: rgba(29, 31, 46, 0.4);
+  }
 }

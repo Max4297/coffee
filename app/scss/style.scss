@@ -112,4 +112,46 @@
   }
 }
 
+.story {
+  padding: 125px 0 100px;
+  &__inner{
+    margin: 0 auto;
+    max-width: 610px;    
+    text-align: center;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 40px;
+    color: $text;
+    margin-bottom: 20px;
+  }
+  &__history {
+   font-size: 16px;
+   line-height: 28px; 
+   color: rgba(29, 31, 46, 0.7);
+   margin-bottom: 25px;
+  }
+  &__link {
+    color: #A25F4B;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 5px;
+    border-bottom: 2px solid rgba(162, 95, 75, 0.2);
+  }
+}
+
+.popular {
+  &__inner {
+    padding: 100px 0 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 455px;
+    object-fit: cover;
+  }
+}
+
+
+
 @import 'media';
