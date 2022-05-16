@@ -11,12 +11,17 @@ body {
   color: $text;
 }
 
+a{
+  @extend %karla-400;
+  color: $text;
+}
+
 .main {
   flex-grow: 1;
 }
 
 .container {
-  width: 950px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -24,6 +29,7 @@ body {
 .title {
   text-align: center;
   font-size: 12px;
+  font-weight: 400;
   line-height: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -48,6 +54,8 @@ body {
 .product {
   &__img {
     margin-bottom: 38px;
+    overflow: hidden;
+    object-fit: contain;
   }
   &__info {
     text-align: center;
@@ -57,6 +65,10 @@ body {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px;
+  }
+  &__price{
+    color: rgba(29, 31, 46, 0.7);
+    line-height: 28px;
   }
   &__price-new {
     color: #A25F4B;
