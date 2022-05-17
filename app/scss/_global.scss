@@ -21,7 +21,7 @@ a{
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -44,10 +44,10 @@ a{
     top: 8px;
   }
   &::before{
-    left: 340px;
+    margin-left: -80px;
   }
   &::after{
-    right: 340px;
+    margin-left: 40px;
   }
 }
 
